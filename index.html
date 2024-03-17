@@ -22,17 +22,21 @@
                 <div class="icon-img">
                     <img src="images/icon-document.svg" alt="" aria-hidden="true" />
                 </div>
-                <div class="icon-img">
+                <div class="icon-img" onclick="uploadPicture()">
                     <img src="images/icon-folder.svg" alt="" aria-hidden="true" />
                 </div>
-                <div class="icon-img">
+                <input type="file" id="uploadInput" style="display: none;" accept=".jpg, .jpeg, .gif, .png" multiple>
+                <div class="icon-img" id="calc">
                     <img src="images/icon-upload.svg" alt="" aria-hidden="true" />
                 </div>
             </section>
         </section>
         <!-- Storage Container -->
         <section class="storage-container">
-            <h1>You've used <span>815 MB</span> of your storage</h1>
+            <h1>You've used <span id="uses">0 MB</span> of your storage</h1>
+            
+            
+            
             <!-- Progress Bar -->
             <section class="progress-bar">
                 <div class="gradient-bar">
@@ -41,16 +45,23 @@
                     </div>
                 </div>
             </section>
+            
+            
+            
             <h2>
                 <span>0 MB</span>
-                <span>100 MB</span>
+                <span>10 MB</span>
             </h2>
             <!-- GB left -->
             <section class="gb-left">
-                <p>185 <span>MB left</span></p>
+                <p id="remainingQuotaText"> 
+                    10 
+                </p>
+                <span >MB left</span>
             </section>
         </section>
     </main>
+    <script src="functions.js"></script>
 </body>
 
 </html>

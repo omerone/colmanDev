@@ -5,7 +5,11 @@
   --background-color: hsl(229, 57%, 11%);
   --container-background-color: hsl(228, 56%, 26%);
   --pale-blue: hsl(243, 100%, 93%);
-  --gradient: linear-gradient(90deg, rgba(255, 163, 153, 1) 36%, rgba(255, 77, 151, 1) 100%);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 36%,
+    rgba(255, 77, 151, 1) 100%
+  );
   --gradient-bar: rgb(255, 163, 153);
   --white: rgb(255, 255, 255);
   --dark-blue: hsl(229, 57%, 11%);
@@ -133,7 +137,8 @@ h1 span {
   background: var(--gradient);
   border-radius: 50px;
   filter: saturate();
-  width: 74%;
+  width: 0%;
+  transition: width 0.5s ease;
   height: 0.8rem;
   position: relative;
 }
