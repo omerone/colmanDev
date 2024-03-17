@@ -1,6 +1,6 @@
 remainingQuota = 10 * 1024 * 1024;
 selectedFiles = [];
-totalFilesSize = 0;
+totalFilesSize = 0;git 
 
 function uploadPicture() {
   if(selectedFiles != null){
