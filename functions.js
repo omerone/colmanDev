@@ -1,4 +1,4 @@
-remainingQuota = 10 * 1024 * 1024;
+const remainingQuota = 10 * 1024 * 1024;
 selectedFiles = [];
 totalFilesSize = 0;
 const MB = 1024 * 1024;
