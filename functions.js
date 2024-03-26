@@ -4,10 +4,12 @@ totalFilesSize = 0;
 const MB = 1024 * 1024;
 
 function uploadPicture() {
+  
   if (selectedFiles != null) {
     selectedFiles = [];
     totalFilesSize = 0;
   }
+
   input = document.getElementById("uploadInput");
   input.click();
 
